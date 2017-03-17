@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="menu">
+      <div class="superior">
+          <div class="icono">
+          <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/cat_moto_transparente.png" />
+          </div>
+          <div class="titulo">
+          <h1>MOTOS</h1>
+        </div>
+      </div>
+      <div class="contenido">
+
+        <div class="icono2">
+        <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/motos-fondo transparente-blends (1).gif"/>
+        </div>
+        <div class="texto1">
+        <p>La YZF-R6 es unaood story, especially BMW. That's why we created #BMWstories,
+         to bring some of our favourite moments you have shared with us to the larger BMW
+         community.We are a leyenda. Tanto en carretera como en los circuitos,
+        gracias a sus 3 títulos Supersport World de los últimos años. Una vuelta en
+        esta moto de carreras nacida para MotoGP y querrás entrar en el impresionante
+        mundo de Yamaha. ¡R WORLD!Y con su electrónica avanzada y una aerodinámica
+        de alto nivel, la YZF-R6 exhibe un rendimiento Supersport extremo con un
+       control absoluto.
+      </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+    <div class="superior">
+        <div class="icono">
+        <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/VEHICULOS (COCHES BMW) (4).png" />
+        </div>
+        <div class="titulo">
+        <h1>COCHES</h1>
+      </div>
+    </div>
+    <div class="contenido">
+
+      <div class="icono2">
+      <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/bmw_PNG1672.png"/>
+      </div>
+      <div class="texto1">
+      <p>Everyone loves a good story, especially BMW. That's why we created #BMWstories,
+         to bring some of our favourite moments you have shared with us to the larger BMW
+         community.We are ood story, especially BMW. That's why we created #BMWstories,
+         to bring some of our favourite moments you have	<script src="js/jquery-3.1.1.min.js"></script>
+ shared with us to the larger BMW
+         community.We are a blown away by how passionate the BMW community truly is,
+          and are honoured to receive the influx of photos from unofficial BMW meet-ups.
+       </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="menu">
+  <div class="superior">
+      <div class="icono">
+      <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/1446469970_713972_1446470243_noticia_normal.jpg" />
+      </div>
+      <div class="titulo">
+      <h1>COCHES ELECTRICOS</h1>
+    </div>
+  </div>
+  <div class="contenido">
+
+    <div class="icono2">
+    <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/bmw_PNG1672.png"/>
+    </div>
+    <div class="texto1">
+    <p>Everyone loves a good story, especially BMW. That's why we created #BMWstories,
+       to bring some of our favourite moments you have shared with us to the larger BMW
+       community.We are always blown away by how passionate the BMW community truly is,
+        and are honoured to receive the influx of photos from unofficial BMW meet-ups.
+     </p>
+    </div>
+  </div>
+</div>
+
+<div class="menu">
+<div class="superior">
+    <div class="icono">
+    <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/800600L0_GSX1300R_L0_SS_c2.png" />
+    </div>
+    <div class="titulo">
+    <h1>MOTOS ELECTRICAS</h1>
+  </div>
+</div>
+<div class="contenido">
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+
+  <div class="icono2">
+  <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/VEHICULOS (MOTOS) (28).png"/>
+  </div>
+  <div class="texto1">
+  <p>Everyone loves a good story, especially BMW. That's why we created #BMWstories,
+     to bring some of our favourite moments you have shared with us to the larger BMW
+     community.We are always blown away by how passionate the BMW community truly is,
+      and are honoured to receive the influx of photos from unofficial BMW meet-ups.
+   </p>
+  </div>
+</div>
+</div>
+
+<div class="menu">
+<div class="superior">
+    <div class="icono">
+    <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/lancha-fs205-transparente-branca.png" />
+  </div>
+
+    <div class="titulo">
+    <h1>LANCHAS</h1>
+  </div>
+</div>
+<div class="contenido">
+
+  <div class="icono2">
+  <img src="/home/alberto/Documentos/juan diego/jquery/jquery animate/lancha-planta-transparente-fs215-proa.png"/>
+  </div>
+  <div class="texto1">
+  <p>Everyone loves a good story, especially BMW. That's why we created #BMWstories,
+     to bring some of our favourite moments you have shared with us to the larger BMW
+     community.We are always blown away by how passionate the BMW community truly is,
+      and are honoured to receive the influx of photos from unofficial BMW meet-ups.
+   </p>
+  </div>
+</div>
+</div>
+
+  </div>
+
+  <script>
+	  $(function() {
+        $(".container > div > div:nth-child(2)").hide();
+        $(".container > div > div:nth-child(1)").click(function() {
+                $(this).next().animate({
+                        height: "toggle"
+                      }, 1000);
+
+                $(this).parent().siblings().children(".contenido").animate ({
+                        height: "hide"
+                      }, 1000);
+               });
+        });
+	</script>
+
+  </body>
+</html>
