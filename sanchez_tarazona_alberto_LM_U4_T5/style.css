@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+}
+.contenedor{
+  height: 600px;
+  width: 800px;
+  margin: 200px auto;
+}
+#izquierda img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  float: left;
+  top: 250px;
+
+}
+#derecha img{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  float: right;
+  top: 250px;
+  -moz-transform: scaleX(-1);
+ -o-transform: scaleX(-1);
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ filter: FlipH;
+ -ms-filter: "FlipH"
+}
+
+.galeria {
+  position: relative;
+  top: 130px;
+  height: 300px;
+  width: 400px;
+  margin: 10px auto;
+
+}
+.galeria img{
+  position: absolute;
+  height: 250px;
+  width: auto;
+  margin: 40px auto;
+  left: 60px;
+}
+body {
+  background: url(logo-liga-bbva.jpg);
+  background-repeat: no-repeat;
+}

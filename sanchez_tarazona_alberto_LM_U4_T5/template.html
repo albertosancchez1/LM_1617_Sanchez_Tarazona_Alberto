@@ -1,0 +1,69 @@
+<!--
+    Author: Juan Diego Pérez @pekechis
+    E-mail: contact@jdperez.es
+    Description: Template for jQuery Exercises
+    Date: December 2016
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Loading jQUery Script -->
+	<title>Liga De Futbol Profesional</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+	<div class="contenedor">
+	<div id="derecha">	<img src="back-arrow-icon-63664.png"/> </div>
+	<div id="izquierda"> <img src="back-arrow-icon-63664.png" /> </div>
+	<div class="galeria">
+		<div class="imagen"> <img src="5.png"/></div>
+		<div> <img src="9.png"/></div>
+		<div> <img src="10.png"/></div>
+		<div> <img src="76.png"/></div>
+		<div> <img src="171.png"/></div>
+		<div> <img src="escudo-madrid.png"/></div>
+		<div> <img src="JUGn8E2.png"/></div>
+
+
+	</div>
+
+
+
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)
+	  $(function() {
+			$(".galeria :first-child").css({"opacity":"1"});
+			$(".galeria :first-child").siblings().css({"opacity":"0"})
+			$("#derecha").click(function(){
+			if($(".imagen").next().length!=0){
+			$(".imagen").removeClass("imagen").animate({
+				opacity: 0
+			},700).next().addClass("imagen").animate({
+			opacity: 1
+		},700)
+		 }
+	 });
+
+			$("#izquierda").click(function(){
+			if($(".imagen").prev().length!=0){
+			$(".imagen").removeClass("imagen").animate({
+				opacity: 0
+			},700).prev().addClass("imagen").animate({
+			opacity: 1
+		},700)
+		 }
+	 });
+
+
+
+
+	  });
+	</script>
+
+</body>
+</html>
