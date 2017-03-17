@@ -1,0 +1,159 @@
+<!--
+    Author: Juan Diego Pérez @pekechis
+    E-mail: contact@jdperez.es
+    Description: Template for jQuery Exercises
+    Date: December 2016
+    Reference: http://api.jquery.com/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery1 html</title>
+	<!-- Loading jQUery Script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="jquery1.css">
+</head>
+<body>
+
+	<h1>jQuery1 html</h1>
+	<!--tabla horario-->
+	<table border="lpx solid black">
+			<thead>
+					<tr>
+							<th>HORA</th>
+							<th>LUNES</th>
+							<th>MARTES</th>
+							<th>MIERCOLES</th>
+							<th>JUEVES</th>
+							<th>VIERNES</th>
+					</tr>
+			</thead>
+			<tbody>
+					<tr >
+							<td>8:15</td>
+							<td>LM</td>
+							<td>FOL</td>
+							<td>LM</td>
+							<td>PRE</td>
+							<td>GBD</td>
+					</tr>
+					<tr>
+							<td>9:15</td>
+							<td>LM</td>
+							<td>PRE</td>
+							<td>LM</td>
+							<td>PRE</td>
+							<td>GBD</td>
+					</tr>
+					<tr>
+							<td>10:15</td>
+							<td>FOL</td>
+							<td>PRE</td>
+							<td>FOL</td>
+							<td>PRE</td>
+							<td>GBD</td>
+					</tr>
+					<td>11:15</td>
+					<th colspan="5">RECREO</th>
+					<tr>
+							<td>11:45</td>
+							<td>GBD</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>FHW</td>
+					</tr>
+					<tr>
+							<td>12:45</td>
+							<td>GBD</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>FHW</td>
+					</tr>
+					<tr>
+							<td>13:45</td>
+							<td>GBD</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>ISO</td>
+							<td>FHW</td>
+					</tr>
+			</tbody>
+	</table><br>
+	<!--tabla alumnos-->
+	<table border="lpx solid black" class="tabla1">
+		<tr>
+			<td>Nombre</td>
+			<td>Apellido1</td>
+			<td>Apellido2</td>
+		</tr>
+		<tr>
+			<td>Marta</td>
+			<td>Dominguez</td>
+			<td>Gimeno</td>
+		</tr>
+		<tr>
+			<td>Picaro</td>
+			<td>Jimenez</td>
+			<td>Martinez</td>
+		</tr>
+			<td>Eduardo</td>
+			<td>Martinez</td>
+			<td>Candau</td>
+		</tr>
+		<tr>
+			<td>Manuel</td>
+			<td>Pigne</td>
+			<td>Pareja</td>
+		</tr>
+		<tr>
+				<td>Maria</td>
+				<td>Perez</td>
+				<td>Escar</td>
+		</tr>
+		<tr>
+				<td>Lucia</td>
+				<td>Rebollo</td>
+				<td>Lopez</td>
+		</tr>
+		<tr>
+				<td>Antonio</td>
+				<td>Rodriguez</td>
+				<td>Fox</td>
+		</tr>
+		<tr>
+				<td>Nicolas</td>
+				<td>Marquez</td>
+				<td>Dominguez</td>
+		</tr>
+		<tr>
+				<td>Fabiola</td>
+				<td>Rodirguez</td>
+				<td>Ramirez</td>
+		</tr>
+		<tr>
+				<td>Diego</td>
+				<td>Ventura</td>
+				<td>Borerro</td>
+		</tr>
+		<!--Parrafos-->
+		<p class="show">parrafo1</p>
+		<p class="show">parrafo2</p>
+		<p>parrafo4</p>
+		<p>parrafo5</p>
+	<script>
+	  //Function executed when the HTML document is Ready (full loaded)
+	  $(function() {
+		$( "h1" ).addClass( "clasejq1");
+		$( "thead" ).css({"background-color":"red","color":"white"});
+		$(".tabla1 tr:odd").css({"background-color":"grey", "color":"black"});
+		$(".tabla1 tr:even").css({"background-color":"grey","color":"white"});
+		$("p[class!=show]").hide();
+  });
+	</script>
+
+</body>
+</html>
